@@ -1,61 +1,49 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>祥安生命有限公司</title>
+    <meta name="description" content="祥安生命 - 24小時喪禮服務專線">
+    <title>祥安生命</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="main.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"祥安生命有限公司</div>
-            <ul>
-                <li><a href="#home">首頁</a></li>
-                <li><a href="#products">禮儀內容</a></li>
-                <li><a href="#about">關於我們</a></li>
-                <li><a href="#contact">聯絡我們</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- 背景圖片區域 -->
+    <div class="hero-section">
+        <div class="hero-overlay"></div>
+        <img src="background.jpg" alt="背景圖片" class="background-image">
+        <!-- 左上角標誌與標語 -->
+        <div class="header">
+            <div class="logo">
+                <h1>祥安生命</h1>
+                <p>Shiangan Funeral Life Etiquette</p>
+            </div>
+            <!-- 右上角漢堡選單 -->
+            <div class="menu">
+                <div class="menu-icon">☰</div>
+            </div>
+        </div>
+        <!-- 服務專線 -->
+        <div class="contact-info">
+            <p>24小時服務專線</p>
+            <a href="tel:0978583699">0978-583-699</a>
+        </div>
+    </div>
 
-    <main>
-        <section id="home" class="hero">
-            <h1>祥安生命有限公司</h1>
-            <p>陪伴您</p>
-            <a href="#products" class="btn">了解更多</a>
-        </section>
+    <!-- 社交按鈕 -->
+    <div class="social-icons">
+        <a href="tel:0978583699" class="icon phone">📞</a>
+        <a href="https://line.me/" target="_blank" class="icon line">LINE</a>
+        <a href="https://facebook.com/" target="_blank" class="icon facebook">FB</a>
+        <a href="https://youtube.com/" target="_blank" class="icon youtube">YT</a>
+    </div>
 
-        <section id="products">
-            <h2>產品介紹</h2>
-            <!-- 插入產品卡片 -->
-        </section>
-
-        <section id="about">
-            <h2>關於我們</h2>
-            <p>我們致力於提供最高品質的商品與服務。</p>
-        </section>
-
-        <section id="contact">
-            <h2>聯絡我們</h2>
-            <form>
-                <label for="name">姓名：</label>
-                <input type="text" id="name" name="name">
-                
-                <label for="email">電子郵件：</label>
-                <input type="email" id="email" name="email">
-                
-                <label for="message">訊息：</label>
-                <textarea id="message" name="message"></textarea>
-                
-                <button type="submit">提交</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2025 祥安生命有限公司/禮儀師陳姸如</p>
-    </footer>
+    <!-- 主要內容 -->
+    <div class="main-content">
+        <div class="buddha-section">
+            <img src="buddha.jpg" alt="佛像" class="buddha-image">
+            <p>陪伴，讓愛永恆。</p>
+        </div>
+    </div>
 </body>
 </html>
