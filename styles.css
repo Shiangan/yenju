@@ -1,4 +1,4 @@
-/* Reset */
+/* 重置樣式 */
 * {
     margin: 0;
     padding: 0;
@@ -10,93 +10,106 @@ body, html {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-/* 背景影片 */
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image {
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
     z-index: -1;
 }
 
-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    transform: translate(-50%, -50%);
-}
-
-/* 淡化遮罩 */
-.overlay {
+.hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 半透明黑色遮罩 */
+    background: rgba(0, 0, 0, 0.5); /* 半透明遮罩 */
     z-index: 1;
 }
 
-/* 內容樣式 */
-.content {
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
     position: relative;
     z-index: 2;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.contact-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
-    padding: 20px;
+    color: white;
+    z-index: 2;
+}
+
+.contact-info a {
+    font-size: 2rem;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    position: fixed;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
-}
-
-.content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.content p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-}
-
-/* 按鈕樣式 */
-.buttons {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.btn {
     text-decoration: none;
-    padding: 10px 20px;
-    background-color: #ff5722;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
+    font-size: 1.5rem;
+    color: black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.btn:hover {
-    background-color: #e64a19;
+.main-content {
+    padding: 20px;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+.buddha-section {
+    margin-top: 20px;
+}
 
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
+.buddha-image {
+    width: 100px;
+    margin-bottom: 10px;
 }
