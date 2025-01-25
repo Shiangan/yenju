@@ -3,47 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="祥安生命 - 24小時喪禮服務專線">
-    <title>祥安生命</title>
+    <meta name="description" content="祥安生命提供高品質喪禮服務，包括中式、西式追思儀式、花禮訂購及專業諮詢，讓愛與尊重延續。">
+    <meta name="keywords" content="喪禮服務, 喪葬, 花禮訂購, 祥安生命, 24小時專線">
+    <meta name="author" content="祥安生命">
+    <title>祥安生命 | 高品質喪禮服務</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <!-- 背景圖片區域 -->
-    <div class="hero-section">
+    <!-- 頁首 -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">祥安生命</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#services">服務項目</a></li>
+                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="#contact">聯絡我們</a></li>
+                </ul>
+            </nav>
+            <a href="tel:+886938179858" class="btn btn-header">24小時專線</a>
+        </div>
+    </header>
+
+    <!-- 英雄區 -->
+    <section id="hero" class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="hero-video.mp4" type="video/mp4">
+            <img src="fallback.jpg" alt="背景圖片">
+        </video>
         <div class="hero-overlay"></div>
-        <img src="background.jpg" alt="背景圖片" class="background-image">
-        <!-- 左上角標誌與標語 -->
-        <div class="header">
-            <div class="logo">
-                <h1>祥安生命</h1>
-                <p>Shiangan Funeral Life Etiquette</p>
-            </div>
-            <!-- 右上角漢堡選單 -->
-            <div class="menu">
-                <div class="menu-icon">☰</div>
-            </div>
+        <div class="hero-content">
+            <h1>祥安生命 - 用心陪伴，讓愛延續</h1>
+            <p>專業服務，24小時陪伴家人完成最後的溫暖告別。</p>
+            <a href="#contact" class="btn btn-primary">立即聯絡</a>
         </div>
-        <!-- 服務專線 -->
-        <div class="contact-info">
-            <p>24小時服務專線</p>
-            <a href="tel:0978583699">0978-583-699</a>
-        </div>
-    </div>
+    </section>
 
-    <!-- 社交按鈕 -->
-    <div class="social-icons">
-        <a href="tel:0978583699" class="icon phone">📞</a>
-        <a href="https://line.me/" target="_blank" class="icon line">LINE</a>
-        <a href="https://facebook.com/" target="_blank" class="icon facebook">FB</a>
-        <a href="https://youtube.com/" target="_blank" class="icon youtube">YT</a>
-    </div>
-
-    <!-- 主要內容 -->
-    <div class="main-content">
-        <div class="buddha-section">
-            <img src="buddha.jpg" alt="佛像" class="buddha-image">
-            <p>陪伴，讓愛永恆。</p>
+    <!-- 服務項目 -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>服務項目</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="service1.webp" alt="中式喪禮">
+                    <h3>中式喪禮</h3>
+                    <p>傳承中華文化，提供傳統禮儀服務。</p>
+                </div>
+                <div class="service-card">
+                    <img src="service2.webp" alt="西式追思">
+                    <h3>西式追思</h3>
+                    <p>現代化設計，融合西方文化的儀式。</p>
+                </div>
+                <div class="service-card">
+                    <img src="service3.webp" alt="花禮佈置">
+                    <h3>花禮與場地佈置</h3>
+                    <p>用心布置每個追思場地，呈現莊重與美感。</p>
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
+
+    <!-- 關於我們 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>關於我們</h2>
+            <p>祥安生命擁有多年專業經驗，秉持誠信與同理心，陪伴每個家庭完成重要儀式。</p>
+        </div>
+    </section>
+
+    <!-- 聯絡我們 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>聯絡我們</h2>
+            <p>24小時服務專線：<a href="tel:+886938179858">0938-179-858</a></p>
+            <p>地址：台灣台北市忠孝東路</p>
+            <form action="submit-form.php" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="您的姓名" required>
+                <input type="email" name="email" placeholder="您的電子郵件" required>
+                <textarea name="message" placeholder="您的訊息" required></textarea>
+                <button type="submit" class="btn btn-submit">送出</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 祥安生命. 版權所有。</p>
+            <ul class="social-icons">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">LINE</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
