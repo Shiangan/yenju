@@ -1,126 +1,120 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="祥安生命提供高品質喪禮服務，包括中式、西式追思儀式、花禮訂購及專業諮詢，讓愛與尊重延續。">
-    <meta name="keywords" content="喪禮服務, 喪葬, 花禮訂購, 祥安生命, 24小時專線">
-    <meta name="author" content="祥安生命">
-    <title>祥安生命 | 高品質喪禮服務</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shinagan Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom Styles */
+    .navbar { transition: background-color 0.3s ease-in-out; }
+    .navbar.scrolled { background-color: rgba(255, 255, 255, 0.9); }
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      background: #1d4ed8;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      padding: 10px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .back-to-top:hover { background: #2563eb; }
+  </style>
 </head>
-<body>
-    <!-- 頁首 -->
-    <header class="header">
-        <div class="container">
-            <a href="#" class="logo">祥安生命</a>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#services">服務項目</a></li>
-                    <li><a href="#about">關於我們</a></li>
-                    <li><a href="#contact">聯絡我們</a></li>
-                </ul>
-            </nav>
-            <a href="tel:+886938179858" class="btn btn-header">24小時專線</a>
-        </div>
-    </header>
-
-    
-<header class="header">
-    <div class="container">
-        <div class="header-content">
-            <a href="#" class="logo">祥安生命</a>
-            <button class="hamburger-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="nav">
-                <ul>
-                    <li><a href="#services">喪禮服務</a></li>
-                    <li><a href="#flowers">花禮訂購</a></li>
-                    <li><a href="#contact">聯繫我們</a></li>
-                    <li><a href="#map">地圖</a></li>
-                </ul>
-            </nav>
-        </div>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar bg-white shadow-lg fixed w-full z-10">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <a href="#" class="text-lg font-semibold text-gray-800">Logo</a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">Home</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">About</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">Services</a></li>
+        <li><a href="#" class="text-gray-600 hover:text-gray-800">Contact</a></li>
+      </ul>
     </div>
-</header>
-    
-    <!-- 英雄區 -->
-    <section id="hero" class="hero">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="hero-video.mp4" type="video/mp4">
-            <img src="fallback.jpg" alt="背景圖片">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>祥安生命 - 用心陪伴，讓愛延續</h1>
-            <p>專業服務，24小時陪伴家人完成最後的溫暖告別。</p>
-            <a href="#contact" class="btn btn-primary">立即聯絡</a>
-        </div>
-    </section>
+  </nav>
 
-    <!-- 服務項目 -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>服務項目</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="service1.webp" alt="中式喪禮">
-                    <h3>中式喪禮</h3>
-                    <p>傳承中華文化，提供傳統禮儀服務。</p>
-                </div>
-                <div class="service-card">
-                    <img src="service2.webp" alt="西式追思">
-                    <h3>西式追思</h3>
-                    <p>現代化設計，融合西方文化的儀式。</p>
-                </div>
-                <div class="service-card">
-                    <img src="service3.webp" alt="花禮佈置">
-                    <h3>花禮與場地佈置</h3>
-                    <p>用心布置每個追思場地，呈現莊重與美感。</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <header class="bg-gray-800 text-white">
+    <div class="container mx-auto px-4 py-20 text-center">
+      <h1 class="text-4xl font-bold mb-4">Welcome to Shinagan</h1>
+      <p class="text-lg mb-6">Your one-stop solution for web development and design.</p>
+      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg">Get Started</a>
+    </div>
+  </header>
 
-    <!-- 關於我們 -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>關於我們</h2>
-            <p>祥安生命擁有多年專業經驗，秉持誠信與同理心，陪伴每個家庭完成重要儀式。</p>
-        </div>
-    </section>
+  <!-- Features Section -->
+  <section class="container mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold text-center mb-8">Our Features</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://via.placeholder.com/150" alt="Feature 1" class="mx-auto mb-4">
+        <h3 class="text-lg font-semibold mb-2">Feature 1</h3>
+        <p class="text-gray-600">Description of Feature 1 goes here.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://via.placeholder.com/150" alt="Feature 2" class="mx-auto mb-4">
+        <h3 class="text-lg font-semibold mb-2">Feature 2</h3>
+        <p class="text-gray-600">Description of Feature 2 goes here.</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-6 text-center">
+        <img src="https://via.placeholder.com/150" alt="Feature 3" class="mx-auto mb-4">
+        <h3 class="text-lg font-semibold mb-2">Feature 3</h3>
+        <p class="text-gray-600">Description of Feature 3 goes here.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- 聯絡我們 -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>聯絡我們</h2>
-            <p>24小時服務專線：<a href="tel:+886938179858">0938-179-858</a></p>
-            <p>地址：台灣台北市忠孝東路</p>
-            <form action="submit-form.php" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="您的姓名" required>
-                <input type="email" name="email" placeholder="您的電子郵件" required>
-                <textarea name="message" placeholder="您的訊息" required></textarea>
-                <button type="submit" class="btn btn-submit">送出</button>
-            </form>
-        </div>
-    </section>
+  <!-- Call to Action -->
+  <section class="bg-blue-500 text-white py-16">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to Start Your Project?</h2>
+      <p class="text-lg mb-6">Get in touch with us today for a free consultation.</p>
+      <a href="#" class="bg-white text-blue-500 font-semibold px-6 py-3 rounded-lg">Contact Us</a>
+    </div>
+  </section>
 
-    <!-- 頁尾 -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 祥安生命. 版權所有。</p>
-            <ul class="social-icons">
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">LINE</a></li>
-                <li><a href="#">YouTube</a></li>
-            </ul>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Shinagan. All Rights Reserved.</p>
+    </div>
+  </footer>
 
-    <script src="scripts.js"></script>
+  <!-- Back to Top Button -->
+  <div id="backToTop" class="back-to-top">↑ Top</div>
+
+  <!-- JavaScript -->
+  <script>
+    // Navbar Scroll Effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Back to Top Button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.style.display = 'block';
+      } else {
+        backToTop.style.display = 'none';
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
