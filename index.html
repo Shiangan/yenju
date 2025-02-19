@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>祥安生命有限公司 - 專業禮儀服務</title>
-  <meta name="description" content="祥安生命有限公司提供專業的中式及西式禮儀服務，24小時全天候諮詢，陪伴您度過人生最重要的時刻。">
+  <meta name="description" content="祥安生命有限公司提供24小時專業禮儀服務，涵蓋中式、佛教、道教、基督教與西式告別儀式，為家屬提供完整支援。">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* 自訂樣式 */
@@ -29,20 +29,35 @@
 </head>
 <body class="bg-gray-100">
 
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "祥安生命有限公司",
+  "url": "http://24hour.xn--kpry57d/",
+  "telephone": "+886912345678",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "台灣",
+    "addressCountry": "TW"
+  }
+}
+</script>
+
   <!-- 導覽列 -->
   <nav id="navbar" class="navbar bg-white shadow-lg fixed w-full z-10">
-    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-      <a href="index.html">
-        <img src="http://24hour.xn--kpry57d/yenju/logo.jpg" alt="祥安生命有限公司" class="h-10">
-      </a>
-      <ul class="flex space-x-4">
-        <li><a href="#" class="text-gray-600 hover:text-gray-800">首頁</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-gray-800">關於我們</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-gray-800">禮儀服務</a></li>
-        <li><a href="#" class="text-gray-600 hover:text-gray-800">聯繫我們</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+    <a href="/">
+      <img src="http://24hour.xn--kpry57d/yenju/logo.jpg" alt="祥安生命有限公司 Logo" class="h-10">
+    </a>
+    <ul class="flex space-x-4">
+      <li><a href="/" class="text-gray-600 hover:text-gray-800">首頁</a></li>
+      <li><a href="/about" class="text-gray-600 hover:text-gray-800">關於我們</a></li>
+      <li><a href="/services" class="text-gray-600 hover:text-gray-800">禮儀服務</a></li>
+      <li><a href="/contact" class="text-gray-600 hover:text-gray-800">聯繫我們</a></li>
+    </ul>
+  </div>
+</nav>
 
   <!-- 橫幅 -->
   <header class="relative bg-gray-800 text-white">
@@ -90,12 +105,48 @@
     </div>
   </section>
 
+  <div class="bg-gray-100 p-4 rounded-md mt-6">
+  <p class="text-gray-700 font-semibold mb-2">服務流程：</p>
+  <ul class="list-disc pl-5 text-gray-600">
+    <li>1. 確認服務需求並提供專業建議</li>
+    <li>2. 與家屬溝通，安排適合的告別儀式</li>
+    <li>3. 提供全程專業禮儀師陪伴與引導</li>
+    <li>4. 儀式結束後，提供後續服務建議</li>
+  </ul>
+  <a href="detail/中式禮儀流程.html" class="text-blue-500 hover:text-blue-700 font-bold underline">
+    查看完整流程 →
+  </a>
+</div>
+
+  <section class="container mx-auto px-4 py-16">
+  <h2 class="text-2xl font-bold text-center mb-8">常見問題</h2>
+  <div class="space-y-4">
+    <div class="bg-white shadow-lg p-4 rounded-lg">
+      <h3 class="font-semibold">Q1: 如何預約禮儀服務？</h3>
+      <p class="text-gray-600">您可以透過 <a href="/contact" class="text-blue-500 underline">聯繫我們</a> 直接預約，我們將提供24小時即時回覆。</p>
+    </div>
+    <div class="bg-white shadow-lg p-4 rounded-lg">
+      <h3 class="font-semibold">Q2: 是否有客製化儀式？</h3>
+      <p class="text-gray-600">我們提供個性化禮儀服務，包括不同宗教或無宗教儀式，並可依需求調整。</p>
+    </div>
+  </div>
+</section>
+
   <!-- 24H 服務 -->
-  <section class="bg-blue-500 text-white py-16 text-center">
+  <section class="bg-blue-500 text-white py-16">
+  <div class="container mx-auto px-4 text-center">
     <h2 class="text-2xl font-bold mb-4">24小時禮儀專線</h2>
-    <p class="text-lg mb-6">立即聯絡我們，獲取免費諮詢。</p>
-    <a href="tel:0800123456" class="bg-white text-blue-500 font-semibold px-6 py-3 rounded-lg">撥打專線</a>
-  </section>
+    <p class="text-lg mb-6">立即聯絡我們，獲取專業建議。</p>
+    <div class="flex justify-center space-x-4">
+      <a href="tel:+886912345678" class="bg-white text-blue-500 font-semibold px-6 py-3 rounded-lg">
+        📞 撥打電話
+      </a>
+      <a href="https://line.me/ti/p/xxxxxxx" class="bg-green-500 text-white font-semibold px-6 py-3 rounded-lg">
+        💬 LINE 即時諮詢
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- 頁尾 -->
   <footer class="bg-gray-800 text-white py-8 text-center">
