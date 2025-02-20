@@ -59,16 +59,28 @@
   </div>
 </nav>
 
-  <!-- 橫幅 -->
-  <header class="relative bg-gray-800 text-white">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('http://24hour.xn--kpry57d/yenju/header.jpg');"></div>
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-    <div class="relative container mx-auto px-4 py-20 text-center">
-      <h1 class="text-4xl font-bold mb-4">祥安生命有限公司</h1>
-      <p class="text-lg mb-6">傾聽、陪伴、專業禮儀服務</p>
-      <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg">24H禮儀諮詢</a>
+<!-- 橫幅 -->
+<header class="relative bg-gray-800 text-white overflow-hidden">
+    <!-- 背景圖片 -->
+    <div class="absolute inset-0 bg-cover bg-center animate-fade-in"
+         style="background-image: url('http://24hour.xn--kpry57d/yenju/header.jpg');">
     </div>
-  </header>
+    
+    <!-- 黑色漸層遮罩 -->
+    <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-transparent"></div>
+    
+    <!-- 內容 -->
+    <div class="relative container mx-auto px-4 py-32 text-center">
+        <h1 class="text-5xl font-bold mb-4 animate-float">祥安生命有限公司</h1>
+        <p class="text-lg mb-6 animate-fade-up">傾聽、陪伴、專業禮儀服務</p>
+        <a href="#" class="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-lg animate-scale">
+            24H禮儀諮詢
+        </a>
+    </div>
+    
+    <!-- 背景動態光暈 -->
+    <div class="absolute inset-0 pointer-events-none animate-glow"></div>
+</header>
 
   <!-- 服務介紹 -->
 <section class="container mx-auto px-4 py-16">
